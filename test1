@@ -30,13 +30,21 @@
     <div class='movingDiv' id='div2'>Part 2:
 
         <script>
-            let age1 = "20";
-            let age2 = parseInt(age1);
+            var text;
+            var favDrink = prompt("How old are you?", "18");
+            var pointNum = parseFloat(favDrink);
+            var superme = Math.floor(pointNum / 18);
 
-            let x = (age2 >= 18 ? "You are over 18!" : "You are below 18 you are too young!");
-
-            console.log(x);
-            document.write(x);
+            switch (superme) {
+                case 0:
+                    text = "You are below 18 you cannot drink!";
+                    break;
+                default:
+                    text = "You are over 18 !";
+            }
+            console.log(text);
+            document.write(text);
+            alert(text);
         </script>
 
     </div>
