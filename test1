@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head ang="en">
+    <meta charset="utf-8">
+    <title>Exercises for Lab 3</title>
+    <link rel="stylesheet" type="text/css" href="css/my_stylesheet.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Lab 03 – Javascript Values, Types, and Operators</h1>
+    </header>
+
+    <div class='movingDiv' id='div1'>Part 1:
+        <script>
+            let age = 28;
+            let maxage = 100;
+            let est = 2;
+
+            let totalsnack = (maxage - age) * (est * 365);
+            console.log(totalsnack);
+
+            alert("You will need " + totalsnack + " cups of tea to last you until the ripe old age of " + age);
+
+            document.write("You will need " + totalsnack + " cups of tea to last you until the ripe old age of " + age)
+        </script>
+
+    </div>
+    <div class='movingDiv' id='div2'>Part 2:
+
+        <script>
+            let age1 = "20";
+            let age2 = parseInt(age1);
+
+            let x = (age2 >= 18 ? "You are over 18!" : "You are below 18 you are too young!");
+
+            console.log(x);
+            document.write(x);
+        </script>
+
+    </div>
+
+    <footer>
+        <p><em>Copyright Khurram Shehzad &copy; 2019</em></p>
+    </footer>
+</body>
+
+</html>
